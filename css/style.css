@@ -390,6 +390,7 @@ html {
 }
 
 .news__tab-button-item {
+  background-color: #fff;
   color: #d3cfce;
   font-size: 1.6rem;
   font-weight: 700;
@@ -411,12 +412,18 @@ html {
 }
 
 .news__tab-content-item.active {
-  margin: 0 -15px;
+  display: block;
+  -webkit-animation: fadeEffect 1s;
+          animation: fadeEffect 1s;
+}
+
+.news__tab-body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation: fadeEffect 1s;
-          animation: fadeEffect 1s;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -15px;
 }
 
 .news__item {
@@ -792,6 +799,14 @@ html {
 
   .main-screen__body::after {
     display: none;
+  }
+
+  .news__tab-button-item {
+    font-size: 2rem;
+  }
+
+  .news__tab-button-item + .news__tab-button-item {
+    margin-left: 40px;
   }
 
   .map__body {
