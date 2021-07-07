@@ -1,1 +1,1 @@
-https://mrgo336.github.io/business/
+https://EgorNikolaiev.github.io/business/
